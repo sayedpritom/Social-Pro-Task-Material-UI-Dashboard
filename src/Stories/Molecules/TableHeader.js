@@ -1,14 +1,14 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 
-const TableHeading = ({name, title}) => {
+const TableHeader = ({name, title}) => {
     const boxStyles = {
         textAlign: 'left',
         backgroundColor: "white",
         padding: "20px",
         marginBottom: "10px",
         boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
-        borderRadius: '2px'
+        borderRadius: '2px',
     }
 
     const headingStyles = {
@@ -23,4 +23,4 @@ const TableHeading = ({name, title}) => {
     );
 };
 
-export default TableHeading;
+export default TableHeader;

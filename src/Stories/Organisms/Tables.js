@@ -1,6 +1,6 @@
 import React from 'react';
 import StuartDent from '../Molecules/StuartDent';
-import { Grid } from '@mui/material';
+import { Grid, Box } from '@mui/material';
 
 const Tables = () => {
     const styles = {
