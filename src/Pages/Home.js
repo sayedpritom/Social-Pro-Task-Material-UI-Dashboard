@@ -2,6 +2,8 @@ import React from 'react';
 import ApplicationBar from '../Stories/Organisms/ApplicationBar';
 import Pagination from '../Stories/Organisms/Pagination';
 import TableData from '../Stories/Organisms/CompleteTable';
+import Charts from '../Stories/Organisms/Charts';
+import AppX from '../Stories/Molecules/Chart';
 
 const Home = () => {
     return (
@@ -9,6 +11,8 @@ const Home = () => {
             <Pagination />
             <ApplicationBar></ApplicationBar>
             <TableData></TableData>
+            {/* <Charts/> */}
+            <AppX></AppX>
         </div>
     );
 };

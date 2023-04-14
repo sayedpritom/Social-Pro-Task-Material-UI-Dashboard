@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import AppBar from '@mui/material/AppBar';
 
-const btnStyles = {
+const btnStyle = {
   color: "#1976D2",
   backgroundColor: "white",
   marginLeft: "10px",
@@ -28,10 +28,10 @@ export default function ApplicationBar() {
           <Typography variant="h6" component="div">
             My Dashboard
           </Typography>
-          <div>
-            <Button sx={btnStyles} >Edit Dashboard</Button>
-            <Button sx={btnStyles} >Export</Button>
-          </div>
+          <Box>
+            <Button sx={btnStyle} >Edit Dashboard</Button>
+            <Button sx={btnStyle} >Export</Button>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
