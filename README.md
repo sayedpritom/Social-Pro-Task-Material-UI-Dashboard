@@ -7,6 +7,6 @@
 * Radial Bar Charts Representing Data
 
 ## Used technologies are: 
-* Material CSS, 
+* Material UI, 
 * React
 * Netlify for hosting
