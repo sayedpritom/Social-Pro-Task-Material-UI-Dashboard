@@ -6,7 +6,8 @@ const SocialProLogo = () => {
         fontSize: '32px',
         padding: '40px',
         display: 'block',
-        fontWeight: '500'
+        fontWeight: '500',
+        margin: '0'
     }
     return (
         <h4 style={style}>

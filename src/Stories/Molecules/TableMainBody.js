@@ -28,9 +28,9 @@ export default function TableMainBody(props) {
             <TableCell sx={{ textTransform: "upperCase", color: "#989797", ...tableStyles }} >{heading}</TableCell>
             <TableCell></TableCell>
             {fourRow && <TableCell></TableCell>}
-            <TableCell align={align} >
+            <TableCell align={align} sx={{textAlign: 'right'}} >
               {searchIcon && <SearchIcon color='primary' />}
-              {expandIcon && <ExpandLessIcon sx={{textAlign: 'right'}} color='primary' />}
+              {expandIcon && <ExpandLessIcon color='primary' />}
             </TableCell>
           </TableRow>
           {

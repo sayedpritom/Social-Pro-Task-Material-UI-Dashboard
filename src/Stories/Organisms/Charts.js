@@ -168,7 +168,7 @@ const Charts = () => {
         <Grid container spacing={3} sx={{ margin: '35px 24px 35px 0px', width: 'auto' }}>
             {data.map(() => {
                 return (
-                    <Grid item lg={3} sm={6} xs={12}>
+                    <Grid item xl={3} lg={4} sm={6} xs={12}>
                         <Box sx={radialBarStyle}>
                             <Typography sx={heading}>Overall Commitment ($)</Typography>
                             <Chart style={chart} data={data} />

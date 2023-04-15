@@ -7,7 +7,7 @@ import SocialProLogo from '../Stories/Atoms/SocialProLogo';
 
 const Home = () => {
     return (
-        <div style={{ backgroundColor: "#FAFAF9", height: '100vh' }}>
+        <div style={{ backgroundColor: "#FAFAF9" }}>
             <Pagination />
             <ApplicationBar></ApplicationBar>
             <TableData></TableData>
