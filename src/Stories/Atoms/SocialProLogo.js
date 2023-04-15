@@ -1,10 +1,9 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
 
 const SocialProLogo = () => {
     const style = {
         color: '#1976d2',
-        fontSize: '25px',
+        fontSize: '32px',
         padding: '40px',
         display: 'block',
         fontWeight: '500'
