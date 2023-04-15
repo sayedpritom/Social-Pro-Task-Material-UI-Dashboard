@@ -11,6 +11,8 @@ const btnStyle = {
   marginLeft: "10px",
   borderRadius: "30px",
   padding: '5px 20px',
+  fontWeight: '500',
+  textTransform: 'none',
 
   '&:hover': {
     backgroundColor: 'white',

@@ -3,7 +3,7 @@ import ApplicationBar from '../Stories/Organisms/ApplicationBar';
 import Pagination from '../Stories/Organisms/Pagination';
 import TableData from '../Stories/Organisms/CompleteTable';
 import Charts from '../Stories/Organisms/Charts';
-import AppX from '../Stories/Molecules/Chart';
+import SocialProLogo from '../Stories/Atoms/SocialProLogo';
 
 const Home = () => {
     return (
@@ -11,8 +11,8 @@ const Home = () => {
             <Pagination />
             <ApplicationBar></ApplicationBar>
             <TableData></TableData>
-            {/* <Charts/> */}
-            <AppX></AppX>
+            <Charts/>
+            <SocialProLogo/>
         </div>
     );
 };

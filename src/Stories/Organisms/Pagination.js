@@ -5,7 +5,7 @@ const linkStyle = {
     color: '#1976D2',
     marginRight: '10px',
     fontSize: '14px',
-    fontWeight: 'medium'
+    fontWeight: '500'
 }
 
 const Pagination = () => {

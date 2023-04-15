@@ -1,33 +1,16 @@
 import React from "react";
 import { ResponsiveRadialBar } from "@nivo/radial-bar";
 
-const data = [
-  {
-    "id": "$USD",
-    "data": [
-      {
-        "x": "Progress",
-        "y": 231
-      },
-      {
-        "x": "Empty",
-        "y": 126
-      }
-    ]
-  }
-  
-]
-
 const MyResponsiveRadialBar = ({ data /* see data tab */ }) => (
   <ResponsiveRadialBar
     data={data}
     valueFormat=" <+$.2g"
     startAngle={-90}
     endAngle={94}
-    innerRadius={0.5}
+    innerRadius={0.6}
     padding={0.1}
     cornerRadius={2}
-    margin={{ top: 40, right: 120, bottom: 40, left: 40 }}
+    margin={ {top: 40, bottom: -60, left: 35, right: 60} }
     colors={['#1876F2', '#F0F2F5']}
     borderColor={{
       from: 'color',
@@ -61,10 +44,4 @@ const MyResponsiveRadialBar = ({ data /* see data tab */ }) => (
   />
 )
 
-export default function AppX() {
-  return (
-    <div style={{ height: 300, width: 400 }}>
-      <MyResponsiveRadialBar data={data} />
-    </div>
-  );
-}
+export default MyResponsiveRadialBar 

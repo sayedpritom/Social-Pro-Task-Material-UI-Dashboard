@@ -18,7 +18,7 @@ const tableStyles = {
 
 export default function TableMainBody(props) {
 
-  const { heading, firstTableHeading, secondTableHeading, searchIcon, expandIcon, rows, fourRow } = props.data;
+  const { heading, firstTableHeading, secondTableHeading, searchIcon, expandIcon, rows, fourRow, align } = props.data;
 
   return (
     <TableContainer component={Paper}>
@@ -28,16 +28,16 @@ export default function TableMainBody(props) {
             <TableCell sx={{ textTransform: "upperCase", color: "#989797", ...tableStyles }} >{heading}</TableCell>
             <TableCell></TableCell>
             {fourRow && <TableCell></TableCell>}
-            <TableCell align="right">
+            <TableCell align={align} >
               {searchIcon && <SearchIcon color='primary' />}
-              {expandIcon && <ExpandLessIcon color='primary' />}
+              {expandIcon && <ExpandLessIcon sx={{textAlign: 'right'}} color='primary' />}
             </TableCell>
           </TableRow>
           {
             (firstTableHeading || secondTableHeading) && <TableRow>
               <TableCell></TableCell>
-              <TableCell align="right" sx={{ padding: "5px 10px", ...tableStyles }} >{firstTableHeading}</TableCell>
-              <TableCell align="right" sx={{ padding: "5px 10px", ...tableStyles }} >{secondTableHeading}</TableCell>
+              <TableCell align={align}  sx={{ padding: "5px 10px", ...tableStyles }} >{firstTableHeading}</TableCell>
+              <TableCell align={align}  sx={{ padding: "5px 10px", ...tableStyles }} >{secondTableHeading}</TableCell>
             </TableRow>
           }
         </TableHead>
@@ -50,13 +50,13 @@ export default function TableMainBody(props) {
               {
                 fourRow ? <>
                   <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} component="th" scope="row">{row.name}</TableCell>
-                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align="right">{parse(row.firstCol)}</TableCell>
-                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align="right">{row.secondCol}</TableCell>
-                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align="right">{row.thirdCol}</TableCell>
+                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align={align} >{parse(row.firstCol)}</TableCell>
+                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align={align} >{row.secondCol}</TableCell>
+                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align={align} >{row.thirdCol}</TableCell>
                 </> : <>
                   <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} component="th" scope="row">{row.name}</TableCell>
-                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align="right">{parse(row.firstCol)}</TableCell>
-                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align="right">{row.secondCol}</TableCell>
+                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align={align} >{parse(row.firstCol)}</TableCell>
+                  <TableCell sx={{ backgroundColor: '#FAF9FA', ...tableStyles }} align={align} >{row.secondCol}</TableCell>
                 </>
               }
             </TableRow>

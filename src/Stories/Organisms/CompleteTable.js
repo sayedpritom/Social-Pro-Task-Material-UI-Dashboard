@@ -14,6 +14,7 @@ const CompleteTable = () => {
             heading: '123 Main Street: acme electrical',
             searchIcon: true,
             expandIcon: true,
+            align: 'right',
             firstTableHeading: 'Approved To Date',
             secondTableHeading: 'When Complete',
             rows: [
@@ -35,6 +36,7 @@ const CompleteTable = () => {
             heading: 'Respondent',
             searchIcon: false,
             expandIcon: true,
+            align: 'left',
             fourRow: true,
             firstTableHeading: null,
             secondTableHeading: null,
