@@ -19,8 +19,8 @@ const CompleteTable = () => {
             secondTableHeading: 'When Complete',
             rows: [
                 { name: 'Contract Works', firstCol: '$58,870.00', secondCol: '$644,395.00' },
-                { name: 'firstCol Variation', firstCol: '$12,500.00', secondCol: '$12,500.00' },
-                { name: 'UnfirstCol Variation', firstCol: '$0.00', secondCol: '$0.00' },
+                { name: 'Approved Variation', firstCol: '$12,500.00', secondCol: '$12,500.00' },
+                { name: 'Unapproved Variation', firstCol: '$0.00', secondCol: '$0.00' },
                 { name: 'Total Works', firstCol: '$71,340.00', secondCol: '$656,895.00' },
                 { name: 'Rejected Variations', firstCol: '$0.00', secondCol: '$0.00' },
             ],

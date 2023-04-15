@@ -28,7 +28,7 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, color: '#1976D2', fontWeight: '600' }}>
         My Dashboard
       </Typography>
       <Divider />
@@ -64,7 +64,7 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ position: 'static' }}>
+      <AppBar component="nav" sx={{ position: 'static', backgroundColor: '#1976D2' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -78,7 +78,7 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', textAlign: 'left' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', textAlign: 'left', fontWeight: '600' } }}
           >
             My Dashboard
           </Typography>
